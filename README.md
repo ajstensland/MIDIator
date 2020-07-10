@@ -14,19 +14,19 @@ Follow the steps below to install and run MIDIator with your MIDI device:
 
 ```bash
 # Install dependencies (mido and python-rtmidi)
-python3 -m pip install -r requirements.txt
+py -m pip install -r requirements.txt
 
 # Plug in your MIDI device
 # Go to "Device Manager" -> "Sound, video and game controllers" to find its name
 # Set "identifier" in the configuration block of src/midiator.py to the device's name 
 
 # Start midiator
-python3 midiator.py
+py midiator.py
 ```
 
 ### Default Keybinds
 
-The below diagram shows the default key- and mouse-binds for MIDIator, starting at the C3 key and going up to B4.
+The below diagram shows the default key- and mouse-binds for MIDIator, starting at C3 and going up to B4.
 
 ***Note:*** These keybinds do not account for the Ctrl, Q, nor E keys, nor the scroll wheel.
 

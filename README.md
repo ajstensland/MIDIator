@@ -26,7 +26,7 @@ python3 midiator.py
 
 ### Default Keybinds
 
-The below diagram shows the default key- and mouse-binds for MIDIator.
+The below diagram shows the default key- and mouse-binds for MIDIator, starting at the C3 key and going up to B4.
 
 ***Note:*** These keybinds do not account for the Ctrl, Q, nor E keys, nor the scroll wheel.
 
@@ -57,9 +57,28 @@ MIDIator has no configuration file. Instead, check out the user configuration bl
 
 On the left you'll see the name of the note on the piano you'd like to bind, and on the right you'll see the name of the key you'd like to bind. The names of notes and keys can be found in `src/midi/midi_enums.py` and `src/windows/windows_enums.py` files, respectively, although they should be largely intuitive. This goes for mouse button and movement binds as well (found in `src/windows/windows_enums.py`).
 
+### Useful default output
+
+By default, MIDIator runs in verbose mode, which displays initialization information as well as the MIDI key code, note name, and corresponding binding for every keypress. This information is especially useful for debugging why a keybind may not be working as expected.
+
+Here's a sample of some of the output:
+
+```
+{+} Initializing MIDIator...
+    > Connecting to MIDI controller by identifier "Casio"... Done.
+    > Initialization complete. 
+{+} Spawning mouse handler thread... Done.
+{+} Handling MIDI events...
+    > Received MIDI code 38 (D3 ) -> Key LSHIFT
+    > Received MIDI code 42 (FS3) -> Key W
+    > Received MIDI code 50 (D4 ) -> Mouse LEFT_CLICK
+    > Received MIDI code 55 (G4 ) -> Mouse RIGHT
+    > Received MIDI code 45 (A3 ) -> Key SPACE
+```
+
 ### Compatible with any MIDI keyboard (theoretically)
 
-You *should* be able to use MIDIator with whatever MIDI device you'd like, on the condition that it sends out stsandard MIDI keyboard codes. MIDIator was tested with a Casio keyboard, but MIDI key codes should be universal. In the case that the binds don't work as expected, MIDIator will let you know what note it thinks your pressing (provided that `verbose` mode is enabled).
+You *should* be able to use MIDIator with whatever MIDI device you'd like, on the condition that it sends out stsandard MIDI keyboard codes. MIDIator was tested with a Casio keyboard, but MIDI key codes should be universal. In the case that the binds don't work as expected, MIDIator will let you know what note it thinks your pressing (provided that verbose mode is enabled).
 
 If you use MIDIator with a non-keyboard device (e.g. an MPC) there's no guarantee of functionality; however, if it works I'd love to hear about it!
 

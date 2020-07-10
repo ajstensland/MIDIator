@@ -2,11 +2,13 @@
 
 MIDIator allows you to utilize your MIDI devices as keyboard and mouse inputs for Windows systems.
 
+![Demo GIF](img/demo.gif)
+
 The inspiration for this project came from wanting to play an FPS with my MIDI keyboard -- with MIDIator, not only can you play games with your piano, but you can use your piano as a general input device for Windows.
 
 ## Quickstart
 
-Here's how to install and get MIDIator running:
+### Installing and Running MIDIator
 
 ```bash
 # Install dependencies (mido and python-rtmidi)
@@ -19,6 +21,10 @@ python3 -m pip install -r requirements.txt
 # Start midiator
 python3 midiator.py
 ```
+
+### Default Keybinds
+
+![Keybind Diagram](img/keybinds.png)
 
 ## Features
 

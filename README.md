@@ -1,6 +1,6 @@
 # MIDIator: The MIDI-Input Mediator
 
-MIDIator allows you to utilize your MIDI devices as keyboard and mouse inputs for Windows systems.
+MIDIator allows you to utilize your MIDI devices as keyboard and mouse inputs for Windows systems. Just plug in your MIDI device, find its name, edit a configuration value, and go!
 
 ![Demo GIF](img/demo.gif)
 
@@ -9,6 +9,8 @@ The inspiration for this project came from wanting to play an FPS with my MIDI k
 ## Quickstart
 
 ### Installing and Running MIDIator
+
+Follow the steps below to install and run MIDIator with your MIDI device:
 
 ```bash
 # Install dependencies (mido and python-rtmidi)
@@ -23,6 +25,10 @@ python3 midiator.py
 ```
 
 ### Default Keybinds
+
+The below diagram shows the default key- and mouse-binds for MIDIator.
+
+***Note:*** These keybinds do not account for the Ctrl, Q, nor E keys, nor the scroll wheel.
 
 ![Keybind Diagram](img/keybinds.png)
 
@@ -59,4 +65,4 @@ If you use MIDIator with a non-keyboard device (e.g. an MPC) there's no guarante
 
 ## Issues, Upcoming Features, and Contributing
 
-This project will probably remain largely dormant; however, any features I'd like to add or known bugs will be enumerated in the [Issues](https://github.com/ajstensland/MIDIator/issues) area. If there's an issue you'd like fixed or a feature you'd like added make an issue there.
+This project will probably remain dormant; however, any features I'd like to add or known bugs will be enumerated in the [Issues](https://github.com/ajstensland/MIDIator/issues) area. I don't expect many people to make it to this part of the README, but if there's an issue you'd like fixed or a feature you'd like added make an issue at the previous link.

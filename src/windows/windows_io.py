@@ -30,7 +30,7 @@ Since Serpent.AI is made available under the MIT License, here's the copy of the
 """
 
 import ctypes
-from src.windows.windows_enums import MouseFlags
+from windows.windows_enums import MouseFlags
 
 
 class KeyBdInput(ctypes.Structure):

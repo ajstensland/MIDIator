@@ -1,7 +1,7 @@
-from src.midi.midi_io import find_device
-from src.midi.midi_enums import Notes
-from src.windows.windows_enums import KeyFlags, DICodes, MouseFlags, MouseDirections
-from src.windows.windows_io import send_key_event, send_mouse_movement_event, send_mouse_button_event
+from midi.midi_io import find_device
+from midi.midi_enums import Notes
+from windows.windows_enums import KeyFlags, DICodes, MouseFlags, MouseDirections
+from windows.windows_io import send_key_event, send_mouse_movement_event, send_mouse_button_event
 import threading
 import time
 from math import sin
